@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+<div data-role="page" data-theme="b">
+    <div data-role="header">
+        <h1>games to order</h1>
+
+        <div data-position="fixed" data-role="header">
+            <div data-role="navbar">
+                <ul>
+                    <li><a data-transition="#" href="index.html">Home</a></li>
+                    <li><a data-transition="#" href="games.html">Games</a></li>
+                    <li><a data-transition="#" href="order.html">Order</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+<div data-role="main" class="content" data-theme="b">
+    <form method="post" action="#">
+        <div class="invoervelden">
+            <label for="fullname">Full name:</label>
+            <input type="text" name="fullname" id="fullname">
+            <label for="bday">Date of Birth:</label>
+            <input type="date" name="bday" id="bday">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Your email..">
+        </div>
+    </form>
+</div>
+</div>
+
+
+<div data-role="main" class="ui-content">
+        <form method="post" action="#">
+            <fieldset data-role="controlgroup">
+                <legend>choose a game that you want</legend>
+                <label for="dirt4">dirt 4</label>
+                <input type="checkbox" name="favcolor" id="dirt4" value="Dirt 4">
+                <label for="needforspeed">need for speed 2017</label>
+                <input type="checkbox" name="favcolor" id="needforspeed" value="need for speed">
+                <label for="forzahorizen3">forza horizen 3</label>
+                <input type="checkbox" name="favcolor" id="forzahorizen3" value="forza horizen 3">
+            </fieldset>
+            <input type="submit" data-inline="true" value="order now" action="">
+        </form>
+    </div>
+</div>
+</div>
+
+
+
+<div data-role="pop-up" id="pop-up">
+    <div data-role="header">
+        <h1>Welcome To My Homepage</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <p>Welcome!</p>
+        <a href="#pagetwo">Go to Dialog Page</a>
+    </div>
+
+    <div data-role="footer">
+        <h1>Footer Text</h1>
+    </div>
+</div>
+
+<div data-role="page" data-dialog="true" id="pagetwo">
+    <div data-role="header">
+        <h1>I'm A Dialog Box!</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <p>The dialog box is different from a normal page, it is displayed on top of the current page and it will not span the entire width of the page. The dialog has also an icon of "X" in the header to close the box.</p>
+        <a href="#pageone">Go to Page One</a>
+    </div>
+
+    <div data-role="footer">
+        <h1>Footer Text In Dialog</h1>
+    </div>
+</div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</html>
